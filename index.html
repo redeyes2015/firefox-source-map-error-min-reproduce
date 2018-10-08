@@ -1,0 +1,20 @@
+<body>
+<script>
+var source = [
+"var foo = function () {",
+"  return 'bar';",
+"};",
+"",
+"console.log(foo());",
+"",
+"//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZvby5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQSxJQUFJLEdBQUcsR0FBRztBQUFBLFNBQU0sS0FBTjtBQUFBLENBQVY7O0FBRUEsT0FBTyxDQUFDLEdBQVIsQ0FBWSxHQUFHLEVBQWYiLCJmaWxlIjoiZm9vLmVzNS5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxudmFyIGZvbyA9ICgpID0+ICdiYXInO1xuXG5jb25zb2xlLmxvZyhmb28oKSlcbiJdfQ==",
+].join("\n");
+
+var blob = new Blob([source], {type: 'application/javascript'});
+var url = URL.createObjectURL(blob);
+var tag = document.createElement('script');
+tag.src = url;
+document.body.appendChild(tag);
+</script>
+Hello world.
+</body>

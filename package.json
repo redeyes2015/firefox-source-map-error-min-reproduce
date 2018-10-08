@@ -1,0 +1,19 @@
+{
+  "name": "source-map-min-reproduce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:js": "babel src/foo.js --out-file dist/foo.es5.js --plugins @babel/plugin-transform-arrow-functions --source-maps inline",
+    "build:html": "node ./build.js",
+    "build": "npm run build:js && npm run build:html",
+    "start": "npm run build && serve dist"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-arrow-functions": "^7.0.0",
+    "serve": "^10.0.2"
+  }
+}

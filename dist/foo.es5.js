@@ -1,0 +1,7 @@
+var foo = function () {
+  return 'bar';
+};
+
+console.log(foo());
+
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9mb28uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0EsSUFBSSxHQUFHLEdBQUc7QUFBQSxTQUFNLEtBQU47QUFBQSxDQUFWOztBQUVBLE9BQU8sQ0FBQyxHQUFSLENBQVksR0FBRyxFQUFmIiwiZmlsZSI6ImZvby5lczUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbnZhciBmb28gPSAoKSA9PiAnYmFyJztcblxuY29uc29sZS5sb2coZm9vKCkpXG4iXX0=
